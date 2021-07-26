@@ -1,0 +1,23 @@
+.hero{
+    color: $naranja;
+}
+
+.tarjeta{
+    a{
+        text-decoration: none;
+        color: $blanco;
+    } 
+}
+.tarjeta_titulo{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.tarjeta_icono{
+    fill: $blanco !important ;
+    width: 15em;
+}
+
+.zocalo{
+    background-color: $negro;
+    color: $blanco;
+}

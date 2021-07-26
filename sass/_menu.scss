@@ -1,0 +1,21 @@
+.menu{
+    background-color: $negro;
+    color: $blanco;
+    font-family: $fuente-principal;
+    border-top: 0.2em solid $naranja;
+    a{
+        color: $blanco;
+        &:hover{
+            color: $naranja;
+        }
+    }
+    .dropdown-menu{
+        background-color: $negro;
+    }
+    
+}
+.menu_logo{
+    color: $blanco;
+    font-weight: 600;
+    font-size: 2rem;
+}

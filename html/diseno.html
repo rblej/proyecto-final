@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fervor 3D</title>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS y icons -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../sass/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg menu">
+          <div class="container-fluid">
+            <a class="navbar-brand text-uppercase menu_logo" href="./index.html">FERVOR 3D</a>
+            <!-- No puedo modificar el color de la hamburguesa. Esta conectado con la clase navbar dark que le sume. sino no aparece-->
+            <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active link" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./impresion.html">Impresión</a></li>
+                          <li><a class="dropdown-item" href="./diseno.html">Diseño</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+      <section class="heroDiseno">
+        <article>
+          <div class="row">
+            <img src="../assets/Diseno/01_diseno_calibre.jpeg" class="img-fluid" alt="Responsive image">
+          </div>
+        </article>
+      </section>
+      <section class="infoDiseno py-5">
+        <article>
+          <div class="text-center">
+            <h2>Consideraciones para diseñar</h2>
+            <p class="lead px-1">Cada diseño depende del metodo de fabricación, te contamos las principales.</p>
+          </div>
+          <div class="accordion accordion-flush py-1 " id="accordionFlushExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed color-secundario" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Espesor mínimo
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="row justify-content-center p-2">
+                  <div class="col-6">
+                    <img src="../assets/Diseno/Espesor_pared.svg" alt="ejemplo espesor de pared">
+                  </div>
+                </div>
+                <div class="accordion-body">A la hora de pasar del plano digital al mundo fisico, debemos tener en cuenta que todo tiene espesor. Para la impresion 3D de tecnología FDM el espesor mínimo recomendado es 1mm. De no cumplirse ésta regla partes del 3D pueden no aparecer o en otros casos el plástico depositado no puede sostenerse a si mismo y puede llegar a colapsar.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed color-secundario" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Resolución del mallado del archivo
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="row justify-content-center p-2">
+                  <div class="col-6">
+                    <img src="../assets/Diseno/Mallado.svg" alt="ejemplo densidad de mallado">
+                  </div>
+                </div>
+                <div class="accordion-body">Si contas con el archivo 3D, es importante que previo a exportar a .stl o .obj te asegures que la densidad de poligono corresponda a la resolución de impresión que deseas. Ésta opción varia según el software que utilices, pero en reglas generales ésta opcion aparece en las opciones de exportación.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed color-secundario" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Webs con Diseños gratuitos
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="row justify-content-center p-2">
+                  <div class="col-3">
+                    <img src="../assets/Diseno/modelo 3d.svg" alt="icono archivo 3d">
+                  </div>
+                </div>
+                <div class="accordion-body">
+                  Probablemente aquello que querés imprimir ya existe en la web y no es necesario diseñar desde cero. Aquí te acercamos las webs más populares con archivos gratuitos listos para imprimir. Descargalo y envialo para que lo coticemos.
+                  <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item"><a href="https://www.thingiverse.com/">Thingiverse</a></li>
+                    <li class="list-group-item"><a href="https://www.myminifactory.com/">My minifactory</a></li>
+                    <li class="list-group-item"><a href="https://cults3d.com/en">Cults 3D</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section class="actionDiseno">
+          <article>
+            <div class="d-grid gap-2 col-6 mx-auto py-5">
+              <a href="./contacto.html" class="btn btn-primary btn-lg boton-principal">Quiero Diseñar!</a>
+            </div>
+          </article>
+        </section>
+      </section>
+      <footer class="zocalo text-center">
+        <div class="container">
+          <div class="p-2">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Fervor3d" target="_blank" role="button"
+              ><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/fervor3d/" target="_blank" role="button"
+              ><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="zocalo_texto">
+            <h7 class="p-1">
+              <strong>Dirección:</strong> Blanco Encalada 3150, Ciudad de Buenos
+              Aires
+            </h7>
+            <h7 class="p-1"><strong>Telefono:</strong> 0800-0400-1111</h7>
+            <h7 class="p-1"><strong>Horario de atención:</strong> de 9:00 a 17:00hs</h7>
+          </div>
+          <div class="zocalo_copy">
+            © 2021 Copyright
+          </div>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

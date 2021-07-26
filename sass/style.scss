@@ -1,0 +1,45 @@
+@import "variables";
+@import "menu";
+@import "homepage";
+@import "productos";
+@import "diseno";
+@import "impresion";
+@import "contacto";
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-weight: 600;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.boton-principal{
+    color: $blanco;
+}
+
+.color-secundario{
+    background-color: $naranja;
+    color: $blanco;
+}
+
+//Botones - no encuentro como cambiar texto a blanco dentro de variables del primary button
+$primary: $naranja;
+$btn-font-family:            $fuente-principal;
+
+//Tarjetas
+$card-border-width: 0;
+$card-color: $blanco;
+$card-bg: $naranja;
+
+//Acordion
+$accordion-button-color:                  $blanco;
+$accordion-button-bg:                     $naranja;
+$accordion-icon-color:                    $blanco;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"

@@ -1,0 +1,16 @@
+.producto{
+    background-color: $naranja;
+    color: $blanco;
+}
+.producto img{
+    width: 360;
+    height: auto;
+    margin: 0.5em;
+    transition: transform .2s;
+}
+
+
+.producto_tarjeta:hover{
+    transform: scale(1.1);
+    
+}
