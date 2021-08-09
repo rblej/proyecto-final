@@ -14,10 +14,18 @@
 }
 .tarjeta_icono{
     fill: $blanco !important ;
-    width: 15em;
 }
 
 .zocalo{
     background-color: $negro;
     color: $blanco;
+}
+
+.card-text{
+    font-size: 1em;
+}
+@media (min-width:641px)  {
+    .card-text{
+        font-size: 1.5em;
+    }
 }
